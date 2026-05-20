@@ -6,6 +6,7 @@ import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
 import Parent from './components/Parent.jsx'
 import Counter from './components/Counter.jsx'
+import Signup from './auth/Signup.jsx'
 
 const App=()=>{
   return (
@@ -21,6 +22,7 @@ const App=()=>{
       <Contact />
       <Parent />
       <Counter />
+      <Signup />
     </>
   )
 }
