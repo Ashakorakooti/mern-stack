@@ -7,22 +7,29 @@ import Contact from './pages/Contact.jsx'
 import Parent from './components/Parent.jsx'
 import Counter from './components/Counter.jsx'
 import Signup from './auth/Signup.jsx'
+import UseEffect from './hooks/UseEffect.jsx'
+import Navbar from './components/Navbar.jsx'
+import {Route, Routes} from 'react-router-dom'
+import UseEffectApi from './hooks/UseEffectApi.jsx'
+import Login from './auth/Login.jsx'
 
 const App=()=>{
   return (
     <>
-      <h1>Hello React</h1>
-      <p>Hello React</p>
-      <button>Hello React</button>
       
-      <Header />
-      <Home />
-      <Service />
-      <About />
-      <Contact />
-      <Parent />
-      <Counter />
-      <Signup />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/useState" element={<Counter />} />
+        <Route path="/useEffect" element={<UseEffect />} />
+        <Route path="/useEffectApi" element={<UseEffectApi />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+
     </>
   )
 }

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Navbar{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 10px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+nav{
+    background-color: chocolate;
+}
+.List{
+    padding:10px;
+    background-color: lightsalmon;
+    border-radius: 15px;
+}
+.List:hover{
+    background-color: lightpink;
+    cursor: pointer;
+    color:azure;
+}
